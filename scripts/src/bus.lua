@@ -1842,6 +1842,8 @@ if (BUSES["MSX_CTRL"]~=null) then
 		MAME_DIR .. "src/devices/bus/msx/ctrl/towns6b.h",
 		MAME_DIR .. "src/devices/bus/msx/ctrl/townspad.cpp",
 		MAME_DIR .. "src/devices/bus/msx/ctrl/townspad.h",
+		MAME_DIR .. "src/devices/bus/msx/ctrl/vaus.cpp",
+		MAME_DIR .. "src/devices/bus/msx/ctrl/vaus.h",
 		MAME_DIR .. "src/devices/bus/msx/ctrl/xe1ap.cpp",
 		MAME_DIR .. "src/devices/bus/msx/ctrl/xe1ap.h",
 	}
@@ -4329,20 +4331,6 @@ if (BUSES["ZORRO"]~=null) then
 		MAME_DIR .. "src/devices/bus/amiga/zorro/action_replay.h",
 		MAME_DIR .. "src/devices/bus/amiga/zorro/buddha.cpp",
 		MAME_DIR .. "src/devices/bus/amiga/zorro/buddha.h",
-	}
-end
-
----------------------------------------------------
---
---@src/devices/bus/sgikbd/sgikbd.h,BUSES["SGIKBD"] = true
----------------------------------------------------
-
-if (BUSES["SGIKBD"]~=null) then
-	files {
-		MAME_DIR .. "src/devices/bus/sgikbd/hlekbd.cpp",
-		MAME_DIR .. "src/devices/bus/sgikbd/hlekbd.h",
-		MAME_DIR .. "src/devices/bus/sgikbd/sgikbd.cpp",
-		MAME_DIR .. "src/devices/bus/sgikbd/sgikbd.h",
 	}
 end
 
