@@ -22,6 +22,7 @@ Hardware notes:
 were actually released.
 
 TODO:
+- plosive consonants are very difficult to hear, it's an issue in votrax.cpp
 - add module slot
 
 *******************************************************************************/
@@ -319,7 +320,7 @@ void k28_state::k28(machine_config &config)
 
 	// sound hardware
 	SPEAKER(config, "mono").front_center();
-	VOTRAX_SC01(config, "speech", 760000).add_route(ALL_OUTPUTS, "mono", 0.5); // measured 760kHz on its RC pin
+	VOTRAX_SC01A(config, "speech", 760000).add_route(ALL_OUTPUTS, "mono", 0.5); // measured 760kHz on its RC pin
 }
 
 
@@ -346,4 +347,4 @@ ROM_END
 *******************************************************************************/
 
 //    YEAR  NAME  PARENT  COMPAT  MACHINE  INPUT  CLASS      INIT        COMPANY, FULLNAME, FLAGS
-SYST( 1981, k28,  0,      0,      k28,     k28,   k28_state, empty_init, "Tiger Electronics", "K-2-8: Talking Learning Computer (model 7-230)", MACHINE_SUPPORTS_SAVE )
+SYST( 1981, k28,  0,      0,      k28,     k28,   k28_state, empty_init, "Tiger Electronics", "K-2-8: Talking Learning Computer (model 7-230)", MACHINE_SUPPORTS_SAVE | MACHINE_IMPERFECT_SOUND )
